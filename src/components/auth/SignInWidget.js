@@ -10,6 +10,20 @@ class SignInWidget extends Component {
     this.widget = new OktaSignIn({
       baseUrl: this.props.baseUrl,
       logo: 'logo.png',
+helpSupportNumber: '(123) 456-7890',
+helpLinks: {
+  custom: [
+    {
+      text: 'What is Okta?',
+      href: 'https://acme.com/what-is-okta'
+    },
+    {
+      text: 'Acme Portal',
+      href: 'https://acme.com',
+      target: '_blank'
+    }
+  ]
+},
 authParams: {
     issuer: 'https://dev-414986.oktapreview.com/oauth2/0oak7ck8894o3wxin0h7',
     responseType: ['id_token', 'token'],
@@ -22,7 +36,8 @@ i18n: {
       'primaryauth.submit': 'Log In',  // Changes the sign in button
       // More e.g. [primaryauth.username.placeholder,  primaryauth.password.placeholder, needhelp, etc.].
       // Full list here: https://github.com/okta/okta-signin-widget/blob/master/packages/@okta/i18n/dist/properties/login.properties
-    }
+    },
+
 },
 features: {
     registration: true,                 // Enable self-service registration flow
