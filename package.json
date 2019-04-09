@@ -2,6 +2,9 @@
   "name": "react_okta_staff_portal",
   "version": "0.1.0",
   "private": true,
+"engines": {
+    "node": "v11.12.0"
+},
   "dependencies": {
     "@okta/okta-react": "^1.2.0",
     "@okta/okta-signin-widget": "^2.18.0",
